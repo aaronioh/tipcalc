@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "$" + tip, Toast.LENGTH_SHORT).show()
         }
 
-        val percentList = arrayOf("10%", "15%", "20%", "25%")
+        val percentList = arrayOf("15%", "10%", "20%", "25%")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, percentList)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         tSpinner.adapter=adapter
