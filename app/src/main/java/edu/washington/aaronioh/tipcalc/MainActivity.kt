@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         tEdit.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
                 val text = tEdit.text.toString()
-                tButton.isEnabled = text.isNotEmpty() && text.matches(Regex("^[0-9]*\$"))
+                tButton.isEnabled = text.isNotEmpty() && text.matches(Regex("^[.0-9]*\$"))
             }
 
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
